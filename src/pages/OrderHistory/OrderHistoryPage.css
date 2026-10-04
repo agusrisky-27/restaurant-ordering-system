@@ -1,0 +1,124 @@
+.history-kpis-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-6);
+}
+
+.history-kpi-item {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-4) var(--spacing-5);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.history-kpi-item .kpi-label {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.history-kpi-item .kpi-number {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.history-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-5);
+  flex-wrap: wrap;
+}
+
+.history-search {
+  flex: 1;
+  min-width: 280px;
+}
+
+.history-dropdown-filters {
+  display: flex;
+  gap: var(--spacing-3);
+}
+
+.history-select {
+  height: 44px;
+  padding: 0 var(--spacing-4);
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border-light);
+  background-color: var(--bg-surface);
+  font-size: var(--font-size-sm);
+  color: var(--text-main);
+  outline: none;
+  cursor: pointer;
+}
+
+.history-table-container {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: var(--font-size-sm);
+}
+
+.history-table th {
+  padding: var(--spacing-4);
+  background-color: var(--bg-subtle);
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.history-table td {
+  padding: var(--spacing-4);
+  border-bottom: 1px solid var(--border-light);
+  vertical-align: middle;
+}
+
+.clickable-history-row {
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.clickable-history-row:hover {
+  background-color: #fafbfc;
+}
+
+.history-date {
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  white-space: nowrap;
+}
+
+.payment-method-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-subtle);
+  font-size: var(--font-size-xs);
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .history-kpis-grid {
+    grid-template-columns: 1fr;
+  }
+}

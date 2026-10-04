@@ -1,0 +1,130 @@
+.settings-alert {
+  margin-bottom: var(--spacing-6);
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1.6fr;
+  gap: var(--spacing-6);
+  align-items: start;
+}
+
+.settings-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.settings-form-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.settings-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  padding-top: var(--spacing-2);
+}
+
+.api-integration-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.api-status-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-subtle);
+  padding: var(--spacing-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+}
+
+.api-status-label {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.api-badge-row {
+  display: flex;
+  align-items: center;
+}
+
+.api-config-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.api-field-title {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.api-code-block {
+  background-color: #0f172a;
+  color: #38bdf8;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-family: monospace;
+  font-size: var(--font-size-sm);
+  display: block;
+}
+
+.api-field-hint {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+.api-integration-guide {
+  background-color: #fafbfc;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-5);
+}
+
+.guide-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: var(--spacing-3);
+}
+
+.guide-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  padding-left: var(--spacing-5);
+  font-size: var(--font-size-xs);
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.guide-steps strong {
+  color: var(--text-main);
+}
+
+.guide-steps code {
+  background-color: var(--bg-subtle);
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: var(--color-primary-dark);
+  font-size: 0.72rem;
+}
+
+@media (max-width: 1024px) {
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+}

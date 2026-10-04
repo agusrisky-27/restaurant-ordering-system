@@ -1,0 +1,68 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  line-height: 1;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.badge-sm {
+  padding: 3px 8px;
+  font-size: 0.7rem;
+}
+
+.badge-md {
+  padding: 4px 10px;
+  font-size: var(--font-size-xs);
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.badge-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Status variants */
+.badge-neutral {
+  background-color: var(--bg-subtle);
+  color: var(--text-muted);
+}
+
+.badge-primary {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+}
+
+.badge-success {
+  background-color: var(--status-completed-bg);
+  color: var(--status-completed-text);
+}
+
+.badge-warning {
+  background-color: var(--status-pending-bg);
+  color: var(--status-pending-text);
+}
+
+.badge-danger {
+  background-color: var(--status-cancelled-bg);
+  color: var(--status-cancelled-text);
+}
+
+.badge-info {
+  background-color: var(--status-preparing-bg);
+  color: var(--status-preparing-text);
+}
+
+.badge-purple {
+  background-color: var(--status-ready-bg);
+  color: var(--status-ready-text);
+}

@@ -1,0 +1,131 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  width: 100%;
+}
+
+.input-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--spacing-2);
+}
+
+.input-label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.input-required-star {
+  color: var(--status-cancelled);
+}
+
+.input-hint {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-control {
+  width: 100%;
+  height: 44px;
+  padding: 0 var(--spacing-4);
+  font-size: var(--font-size-sm);
+  color: var(--text-main);
+  background-color: var(--bg-surface);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.input-control::placeholder {
+  color: var(--text-light);
+}
+
+.input-control:hover:not(:disabled) {
+  border-color: #cbd5e1;
+}
+
+.input-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15);
+  background-color: #ffffff;
+}
+
+.input-control:disabled {
+  background-color: var(--bg-subtle);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Icons */
+.input-control.has-left-icon {
+  padding-left: 42px;
+}
+
+.input-control.has-right-icon {
+  padding-right: 42px;
+}
+
+.input-icon-left {
+  position: absolute;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.input-icon-right {
+  position: absolute;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.input-password-toggle {
+  position: absolute;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast);
+}
+
+.input-password-toggle:hover {
+  color: var(--text-main);
+}
+
+/* Error State */
+.has-error .input-control {
+  border-color: var(--status-cancelled) !important;
+  background-color: #fffaf9;
+}
+
+.has-error .input-control:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2) !important;
+}
+
+.input-error-msg {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  font-size: var(--font-size-xs);
+  color: var(--status-cancelled);
+  margin-top: 2px;
+  font-weight: 500;
+}
